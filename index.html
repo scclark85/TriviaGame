@@ -1,16 +1,3 @@
-<!-- You'll create a trivia game that shows only one question until the player answers it or their time runs out.
-If the player selects the correct answer, show a screen congratulating them for choosing the right option. After a few seconds, display the next question -- do this without user input.
-
-The scenario is similar for wrong answers and time-outs.
-
-
-If the player runs out of time, tell the player that time's up and display the correct answer. Wait a few seconds, then show the next question.
-If the player chooses the wrong answer, tell the player they selected the wrong option and then display the correct answer. Wait a few seconds, then show the next question.
-
-
-On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page). -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,20 +17,33 @@ On the final screen, show the number of correct answers, incorrect answers, and 
 </head>
 
 <body>
+    <h1 class="header text-center">TOTALLY TRIVIAL TRIVIA!</h1>
+    <h2 class="text-center">Friends Edition</h2>
+
+    <div class="container text-center">
+        <div class='container'>
+            <button class='btn btn-primary' id='startBtn'>Press To Start</button>
+
+            <!-- Question page -->
+            <div id=timeLeft></div>
+            <div id=currentQuestion></div>
+            <div class='question'></div>
+            <div class='answerList'></div>
+
+            <!-- Answer Page -->
+            <div id=message></div>
+            <div id=correctedAnswer></div>
+            <div id=jpg></div>
+
+            <!-- Result Page -->
+            <div id=finalMessage></div>
+            <div id=correctAnswers></div>
+            <div id=incorrectAnswers></div>
+            <div id=unanswered></div>
+            <div id='startOverBtn'></div>
+        </div>
 
 
-    <div class="main-container">
-        <h1 class="header text-center">TOTALLY TRIVIAL TRIVIA!</h1>
-        <h2 class="subject text-center">Friends Addition</h2>
-
-        <!-- Main game area -->
-        <b><div id="game-area"></div></b>
-
-        <!-- Start Button -->
-        <button type="button" id="start">Start</button>
-
-        <!-- time clock -->
-        <div class="text-center" id="display">Time Remaining: 30 Seconds</div>
     </div>
 
     <!-- jQuery link -->

@@ -1,0 +1,42 @@
+body{
+	background-image: url('http://4.bp.blogspot.com/-v874MzKy0Vg/UruqgjavLcI/AAAAAAAAE_o/AM9ljgZtZ4s/s1600/new-york-city-at-night-black-and-white+-20143.jpg')
+}
+
+h1 {
+	color: white;
+    margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	color: white;
+}
+
+.btn-primary,.reset{
+	background-color: #725349;
+	color: white;
+	font-size: 30px;
+	padding: 20px;
+	margin-top: 100px;
+}
+.btn-primary:hover, .reset:hover{
+	background-color: #9191a1;
+}
+
+.container{
+    background-color: white;
+	margin-top: 50px;
+	text-align: center;
+	height: 300px;
+	width: 600px;
+}
+
+.thisChoice:hover{
+	background-color: #58595c;
+	color: white;
+	padding: 10px;
+}
+
+#gif{
+	margin: 30px;
+}
