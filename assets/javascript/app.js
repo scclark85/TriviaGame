@@ -76,7 +76,7 @@ function newQuestion() {
     answered = true;
 
     $("#currentQuestion").html("Question #" + (currentQuestion + 1) + "/" + triviaQuestions.length);
-    $(".question").html("<h2>" + triviaQuestions[currentQuestion].question + "</h2>");
+    $(".question").html("<h3>" + triviaQuestions[currentQuestion].question + "</h3>");
     for (var i = 0; i < 4; i++) {
         var choices = $("<div>");
         choices.text(triviaQuestions[currentQuestion].answerList[i]);
@@ -115,7 +115,7 @@ function showCountdown() {
 // page sets up correct/incorrect/unanswered answers
 function answerPage() {
     $("#currentQuestion").empty();
-    $(".thisChoice").empty(); //Clears question page
+    $(".thisChoice").empty(); 
     $(".question").empty();
 
     var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
